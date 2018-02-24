@@ -1,0 +1,15 @@
+Notas da Versão
+
+3.2.3 (24/02/2018)
+
+3.2.1 (18/02/2018)
+ -Corrigido falha de exibição na tela de vídeos. Tela exibia faixa branca abaixo do vídeo;
+
+3.2 (18/02/2018)
+ - Incluído permissão para selecionar e copiar os comentários;
+ - Bloqueado botão para evitar compartilhamento de áudio quando o retorno for null;
+ - Incluído mensagem informando que não existe áudio publicado para o capítulo;
+ - Revisado código para permitir consulta aos livros com nomes compostos;
+ 
+ 3.1 (15/02/2018)
+- Melhorias de estilo

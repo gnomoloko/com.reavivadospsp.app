@@ -1,0 +1,123 @@
+Preparação do ambiente de desenvolvimento:
+
+
+1) Criar o app:
+
+react-native init reavivados_app
+
+**************************************************************************
+
+2) No diretório do app, executar os comandos abaixo:
+
+npm install -g eslint
+
+npm install --save-dev eslint-config-rallycoding
+
+npm install --save react-navigation
+
+npm install --save react-router-native
+
+npm install --save firebase
+
+yarn add react-native-youtube
+
+react-native link react-native-youtube
+
+yarn add react-native-button
+
+npm install react-native-hr
+
+npm install --save react-native-indicators
+
+yarn add react-native-audio-toolkit
+
+react-native link react-native-audio-toolkit
+
+**************************************************************************
+
+Configurar novas fontes:
+	Incluir o código abaixo no arquivo package.json
+
+"rnpm": {
+    "assets": [
+      "assets/fonts/Roboto"
+    ]
+  }
+
+e executar o comando: 
+
+react-native link
+
+Ver tutorial em: https://blog.bam.tech/developper-news/add-a-custom-font-to-your-react-native-app
+
+**************************************************************************
+
+3) Corrigir erro "Error Configuration with name 'default' not found":
+
+Ver em: https://github.com/airbnb/lottie-react-native/issues/246
+
+**************************************************************************
+
+4) Iniciar emulador:
+
+%ANDROID_HOME%/tools/emulator.exe -avd Android7
+
+**************************************************************************
+
+5) Iniciar app:
+ -> Antes de iniciar, abrir o arquivo |android| da pasta android do app no ANDROID STUDIO
+
+react-native run-android
+
+**************************************************************************
+
+6) Gerar apk para instalação no celular:
+
+Entrar na pasta do projeto;
+Localizar a pasta android/app/src/main/assets (se esta pasta não existir, criar essa pasta);
+Retornar para raiz do projeto;
+Executar o comando: 
+
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+Voltar para pasta de projeto;
+Executar o comando:
+
+react-native run-android;
+
+O apk gerado estará na pasta do projeto - \android\app\build\outputs\apk
+
+**************************************************************************
+
+7) Gerar apk para publicação na PlayStore:
+
+Editar as versões no arquivo build.gradle da pasta android\app:
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.reavivados_app"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 4 -----------> icrementar 1 a cada nova versão carregada na PlayStore 
+        versionName "3.1" -------> atualizar para eibir a versão que vc quer
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+
+Abrir o ANDROID STUDIO
+
+Menu Build -> Generate Signed APK
+
+Carregar o arquivo android\app\app-release.apk para a PlayStore. (Este é o seu app!)
+
+**************************************************************************
+
+8) GitHub:
+Repositório Reavivados_app
+
+https://github.com/gnomoloko/reavivados_app.git
+
+**************************************************************************
