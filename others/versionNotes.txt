@@ -1,5 +1,5 @@
 Notas da Versão
-
+3.2.3 (24/02/2018)
 
 3.2.1 (18/02/2018)
  -Corrigido falha de exibição na tela de vídeos. Tela exibia faixa branca abaixo do vídeo;
