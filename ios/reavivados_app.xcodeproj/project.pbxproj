@@ -50,6 +50,9 @@
 		155A62B49C96429DA6BB2E9A /* Roboto_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E753832BADBE4AF69DD7ADA9 /* Roboto_regular.ttf */; };
 		9A447174372B47DF8D47373E /* Roboto_thin_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 720C656F30274968BDF100BB /* Roboto_thin_italic.ttf */; };
 		33558B2D22A14CD5BEE62318 /* Roboto_thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D79A54AA15924D9CA186A0AB /* Roboto_thin.ttf */; };
+		2EC07FBD00C44AAFA2EE8F83 /* libToolTipMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E8A070790154703A5779FBD /* libToolTipMenu.a */; };
+		9C7E5D5D5C5D4305AA1AED34 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC9D99D89FC4F39BB599E0F /* libRCTVideo.a */; };
+		C4D55EA3249B4793B3EB4454 /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7841894C75A4BAFBE011FEA /* libRNFetchBlob.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,6 +318,12 @@
 		E753832BADBE4AF69DD7ADA9 /* Roboto_regular.ttf */ = {isa = PBXFileReference; name = "Roboto_regular.ttf"; path = "../assets/fonts/Roboto/Roboto_regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		720C656F30274968BDF100BB /* Roboto_thin_italic.ttf */ = {isa = PBXFileReference; name = "Roboto_thin_italic.ttf"; path = "../assets/fonts/Roboto/Roboto_thin_italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		D79A54AA15924D9CA186A0AB /* Roboto_thin.ttf */ = {isa = PBXFileReference; name = "Roboto_thin.ttf"; path = "../assets/fonts/Roboto/Roboto_thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		793B195310B24E8E8C054BF2 /* ToolTipMenu.xcodeproj */ = {isa = PBXFileReference; name = "ToolTipMenu.xcodeproj"; path = "../node_modules/react-native-tooltip/ToolTipMenu.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		9E8A070790154703A5779FBD /* libToolTipMenu.a */ = {isa = PBXFileReference; name = "libToolTipMenu.a"; path = "libToolTipMenu.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7C0130EDB0EC4186A1005434 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; name = "RCTVideo.xcodeproj"; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		8AC9D99D89FC4F39BB599E0F /* libRCTVideo.a */ = {isa = PBXFileReference; name = "libRCTVideo.a"; path = "libRCTVideo.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		756CE0C64D0A4BC08398502E /* RNFetchBlob.xcodeproj */ = {isa = PBXFileReference; name = "RNFetchBlob.xcodeproj"; path = "../node_modules/react-native-fetch-blob/ios/RNFetchBlob.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		B7841894C75A4BAFBE011FEA /* libRNFetchBlob.a */ = {isa = PBXFileReference; name = "libRNFetchBlob.a"; path = "libRNFetchBlob.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +354,9 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				EC6ADE96C8E44658A4224276 /* libRCTYouTube.a in Frameworks */,
 				18C368482967408DB0690305 /* libReactNativeAudioToolkit.a in Frameworks */,
+				2EC07FBD00C44AAFA2EE8F83 /* libToolTipMenu.a in Frameworks */,
+				9C7E5D5D5C5D4305AA1AED34 /* libRCTVideo.a in Frameworks */,
+				C4D55EA3249B4793B3EB4454 /* libRNFetchBlob.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +536,9 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				D36A7BF865484DDB9F4A5544 /* RCTYouTube.xcodeproj */,
 				A496DC7141C54A29B8BF8806 /* ReactNativeAudioToolkit.xcodeproj */,
+				793B195310B24E8E8C054BF2 /* ToolTipMenu.xcodeproj */,
+				7C0130EDB0EC4186A1005434 /* RCTVideo.xcodeproj */,
+				756CE0C64D0A4BC08398502E /* RNFetchBlob.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1129,11 +1144,17 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-audio-toolkit\ios\ReactNativeAudioToolkit/**",
+					"$(SRCROOT)\..\node_modules\react-native-tooltip\ToolTipMenu",
+					"$(SRCROOT)\..\node_modules\react-native-video\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 				);
 			};
 			name = Debug;
@@ -1156,11 +1177,17 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-audio-toolkit\ios\ReactNativeAudioToolkit/**",
+					"$(SRCROOT)\..\node_modules\react-native-tooltip\ToolTipMenu",
+					"$(SRCROOT)\..\node_modules\react-native-video\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 				);
 			};
 			name = Release;
@@ -1184,6 +1211,9 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-audio-toolkit\ios\ReactNativeAudioToolkit/**",
+					"$(SRCROOT)\..\node_modules\react-native-tooltip\ToolTipMenu",
+					"$(SRCROOT)\..\node_modules\react-native-video\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 				);
 			};
 			name = Debug;
@@ -1206,6 +1236,9 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-audio-toolkit\ios\ReactNativeAudioToolkit/**",
+					"$(SRCROOT)\..\node_modules\react-native-tooltip\ToolTipMenu",
+					"$(SRCROOT)\..\node_modules\react-native-video\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 				);
 			};
 			name = Release;
@@ -1237,11 +1270,17 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-audio-toolkit\ios\ReactNativeAudioToolkit/**",
+					"$(SRCROOT)\..\node_modules\react-native-tooltip\ToolTipMenu",
+					"$(SRCROOT)\..\node_modules\react-native-video\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 				);
 			};
 			name = Debug;
@@ -1273,11 +1312,17 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-youtube/**",
 					"$(SRCROOT)\..\node_modules\react-native-audio-toolkit\ios\ReactNativeAudioToolkit/**",
+					"$(SRCROOT)\..\node_modules\react-native-tooltip\ToolTipMenu",
+					"$(SRCROOT)\..\node_modules\react-native-video\ios",
+					"$(SRCROOT)\..\node_modules\react-native-fetch-blob\ios/**",
 				);
 			};
 			name = Release;
@@ -1304,6 +1349,9 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1328,6 +1376,9 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);

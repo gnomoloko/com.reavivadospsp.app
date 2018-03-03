@@ -1,9 +1,10 @@
 Notas da Versão
 
-3.2.3 (24/02/2018)
+3.2.2 (02/03/2018)
+ - Incluído link para download dos vídeos
 
 3.2.1 (18/02/2018)
- -Corrigido falha de exibição na tela de vídeos. Tela exibia faixa branca abaixo do vídeo;
+ - Corrigido falha de exibição na tela de vídeos. Tela exibia faixa branca abaixo do vídeo;
 
 3.2 (18/02/2018)
  - Incluído permissão para selecionar e copiar os comentários;

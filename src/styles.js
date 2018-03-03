@@ -379,7 +379,14 @@ hwa_image_social_icon: {
     width: null,
     height: 40,
     resizeMode: 'contain'
-}
+},
+
+videoDownload: {
+    fontSize: 12,
+    fontStyle: 'italic',
+    color:'darkblue',
+    marginLeft:14,
+  },
 
 
 });
