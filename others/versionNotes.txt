@@ -1,5 +1,8 @@
 Notas da Versão
 
+3.2.3 (23/04/2018)
+ - Corrigido acesso aos áudios publicados a partir de 01/04/2018
+
 3.2.2 (02/03/2018)
  - Incluído link para download dos vídeos
 

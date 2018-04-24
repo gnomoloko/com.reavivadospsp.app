@@ -62,7 +62,11 @@ export default class TabAudios extends Component {
     
     firebase.database().ref(`${livro}/${capit}/audio/link`).once('value', (snapshot) =>{
     let state = this.state;
-    state.audio ="http://vod.novotempo.org.br/mp3/Reavivados/Reavivados" + snapshot.val() + ".mp3";
+    var stringDate = snapshot.val();
+    var tempDate= stringDate.split("-");
+    var date = new Date(tempDate[2],tempDate[1]-1,tempDate[0],0,0,0,0);
+    var pointDate = new Date(2018,3,1,0,0,0,0);
+    if(date >= pointDate){state.audio ="http://vod.novotempo.org.br/mp3/ReavivadosA/Reavivados" + snapshot.val() + ".mp3"} else {state.audio ="http://vod.novotempo.org.br/mp3/Reavivados/Reavivados" + snapshot.val() + ".mp3"}
     if(snapshot.val() == null){this.state.shareButton = true}
     this.player = new Player(this.state.audio)
     

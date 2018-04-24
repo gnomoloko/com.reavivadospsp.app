@@ -43,8 +43,8 @@ RNFetchBlob
   })
 
 //.fetch('GET', 'https://mdfh1hostxyz.000webhostapp.com/videos/' + this.props.navigation.state.params.link + '.mp4', {
-  .fetch('GET', 'http://videos.rpspapp.com/' + this.props.navigation.state.params.link + '.mp4', {
-
+.fetch('GET', 'http://videos.rpspapp.com/' + this.props.navigation.state.params.link + '.mp4', {
+  
 })
 .then((res) => {
 
