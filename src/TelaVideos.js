@@ -6,12 +6,13 @@ import {
   View,
   TouchableOpacity,
   Share,
+  Linking,
   ScrollView
 } from 'react-native';
 import styles from './styles.js';
 import { StackNavigator } from 'react-navigation';
 import YouTube from 'react-native-youtube';
-import RNFetchBlob from 'react-native-fetch-blob';
+//import RNFetchBlob from 'react-native-fetch-blob';
 export default class TelaVideos extends Component {
 
   static navigationOptions = ({navigation}) => ({
@@ -29,28 +30,29 @@ export default class TelaVideos extends Component {
       isPlaying: true
     }
 
-    _download() {
-      let dirs = RNFetchBlob.fs.dirs
-RNFetchBlob
-.config({addAndroidDownloads : {
-      useDownloadManager : true,
-      title : this.props.navigation.state.params.autor + " - " + this.props.navigation.state.params.book + " " + this.props.navigation.state.params.chapter,
-      description : 'Baixando video',
-      mime : 'video/mp4',
-      mediaScannable : true,
-      notification : true,
-    }
-  })
+
+//    _download() {
+//      let dirs = RNFetchBlob.fs.dirs
+//RNFetchBlob
+//.config({addAndroidDownloads : {
+//      useDownloadManager : true,
+//      title : this.props.navigation.state.params.autor + " - " + this.props.navigation.state.params.book + " " + this.props.navigation.state.params.chapter,
+//      description : 'Baixando video',
+//      mime : 'video/mp4',
+//      mediaScannable : true,
+//      notification : true,
+//    }
+//  })
 
 //.fetch('GET', 'https://mdfh1hostxyz.000webhostapp.com/videos/' + this.props.navigation.state.params.link + '.mp4', {
-.fetch('GET', 'http://videos.rpspapp.com/' + this.props.navigation.state.params.link + '.mp4', {
+//.fetch('GET', 'http://videos.rpspapp.com/' + this.props.navigation.state.params.link + '.mp4', {
   
-})
-.then((res) => {
+//})
+//.then((res) => {
 
-console.log('The file saved to ', res.path())
-})
-    }
+//console.log('The file saved to ', res.path())
+//})
+//    }
 
     render() {
        return (
@@ -89,7 +91,8 @@ console.log('The file saved to ', res.path())
                 />
               </View> 
               <View>
-                <TouchableOpacity onPress={()=>this._download()}>
+                {/* <TouchableOpacity onPress={()=>this._download()}> */}
+                <TouchableOpacity onPress={()=>{Linking.openURL("http://rpspapp.com/video/download/reavivados_app_downloader/getvideo.php?videoid="+ this.props.navigation.state.params.link +"&type=Download")}}>
                 <Text style={styles.videoDownload}>Download</Text>
                 </TouchableOpacity>
               </View>

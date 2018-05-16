@@ -33,6 +33,8 @@ yarn add react-native-audio-toolkit
 
 react-native link react-native-audio-toolkit
 
+npm install react-responsive-music-player --save
+
 **************************************************************************
 
 Configurar novas fontes:
