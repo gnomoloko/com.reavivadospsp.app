@@ -1,5 +1,10 @@
 Notas da Versão
 
+3.2.4 (16/05/2018)
+ - Alterado metodo de download dos vídeos.
+ antes: precisava colocar os vídeos em servidor próprio.
+ atual: incluído redirecionamento para pagina de download do rpspapp (http://rpspapp.com/video/download/reavivados_app_downloader/getvideo.php?videoid=kkk&type=Download)
+
 3.2.3 (23/04/2018)
  - Corrigido acesso aos áudios publicados a partir de 01/04/2018
 
