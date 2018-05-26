@@ -35,6 +35,8 @@ react-native link react-native-audio-toolkit
 
 npm install react-responsive-music-player --save
 
+npm install --save youtube-thumbnail
+
 **************************************************************************
 
 Configurar novas fontes:

@@ -182,7 +182,7 @@ containervideo:{
 	color: "darkblue",
 	marginLeft: 30,
 	marginRight: 30,
-	fontSize: 22,
+	fontSize: 14,
 	fontFamily: 'Roboto Bold',
 	textAlign: 'center',
 },
@@ -204,15 +204,30 @@ logoImg: {
 	borderWidth: 1.5,
 	borderColor: "#fff",
 	flexDirection: 'column',
-	height: 180,
+	height: 80,
 	
 }, 
+textVideoAutor: {
+    flexDirection: 'row',
+},
+
+alinhaTextoCentro: {
+    marginTop:15,
+    
+},
 
 textoVideoAuthor: {
     fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+    textAlign: 'left',
+    margin: 5,
   },
+
+thumbVideo: {
+    marginLeft: 10,
+    width: 90, 
+    height: 50,
+},
+  
 textoVideoBook: {
     textAlign: 'center',
     color: '#333333',

@@ -3,6 +3,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, FlatList, ImageBackgro
 import styles from './styles.js';
 import YouTube from 'react-native-youtube';
 import firebase from './firebaseConn';
+var youtubeThumbnail = require('youtube-thumbnail');
 
 
 export default class TabVideos extends Component {
@@ -73,17 +74,22 @@ class YTvideo extends Component {
 		render() {
 			
 			return (
-			<View>
-				<View style={styles.boxVideo}>
-					<Text style={styles.textoAuthorVideo}>{this.props.data.autorvideo}</Text>
+			<View style={styles.textVideoAutor}>
+				{/* <View style={styles.boxVideo}> */}
+				
+				
 						<View style={styles.logoImg} >
 							<TouchableOpacity onPress={()=>this.props.navigation.navigate('TelaVideos', {link: this.props.data.linkvideo, autor: this.props.data.autorvideo, book: this.props._book, chapter: this.props._chapter})}>
-								<Image source={require ('../img/play-icon.png')} />					
+							<Image style={styles.thumbVideo} source={{uri: 'http://img.youtube.com/vi/' + this.props.data.linkvideo + '/default.jpg'}} />				
+								{/* <Image source={require ('../img/play-icon.png')} />					 */}
 							</TouchableOpacity>
+						</View>
+						<View style={styles.alinhaTextoCentro}>
+						<Text style={styles.textoAuthorVideo}>{this.props.data.autorvideo}</Text>
 						</View>
 				</View>
 				
-			</View>
+		
 			);
 			
 		}
