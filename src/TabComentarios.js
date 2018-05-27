@@ -109,7 +109,7 @@ class Coment extends Component {
           <View>
             <View>
               <Text style={styles.textoTitle}>{this.props.data.autor}</Text>
-              <Text selectable = {true} style={styles.texto_comment}>{this.props.data.texto}</Text>
+              <Text allowFontScaling = {true} selectable = {true} style={styles.texto_comment}>{this.props.data.texto}</Text>
             </View>
             <View>
               <TouchableOpacity onPress = {()=> Share.share(

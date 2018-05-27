@@ -1,7 +1,10 @@
 Notas da Versão
+3.2.6 (27/05/2018)
+ - Incluído permisão para redimensionar fontes e flag para indicar o idioma dos vídeos.
 
 3.2.5 (25/05/2018)
  - Alterado disposição dos vídeos.
+
 3.2.4 (16/05/2018)
  - Alterado metodo de download dos vídeos.
  antes: precisava colocar os vídeos em servidor próprio.

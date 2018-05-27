@@ -104,7 +104,7 @@ class ListaVerso extends Component {
     
 	    return (
               <View style={{flexDirection:'row', flexWrap:'wrap'}}>
-              <Text style={styles.txtLine}><Text style={styles.txtVerse}>{this.props.data.verse}</Text> - <Text style={styles.texto}>{this.props.data.text}</Text></Text>
+              <Text  allowFontScaling = {true} style={styles.txtLine}><Text style={styles.txtVerse}>{this.props.data.verse}</Text> - <Text style={styles.texto}>{this.props.data.text}</Text></Text>
           </View>
     ) 
     

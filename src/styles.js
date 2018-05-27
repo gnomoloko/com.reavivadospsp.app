@@ -211,15 +211,26 @@ textVideoAutor: {
     flexDirection: 'row',
 },
 
+lang:{
+    height: 10,
+    width:17,
+    marginLeft: 28,    
+},
+
 alinhaTextoCentro: {
     marginTop:15,
     
 },
 
+alinhaFlag:{
+    marginTop:19,
+    alignItems:'baseline'
+},
+
 textoVideoAuthor: {
     fontSize: 20,
     textAlign: 'left',
-    margin: 5,
+    margin: 10,
   },
 
 thumbVideo: {

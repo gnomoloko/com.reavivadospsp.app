@@ -30,7 +30,8 @@ export default class TabVideos extends Component {
 			state.listavideo.push({
 			  key:childItem.key,
 			  autorvideo:childItem.val().autor,
-			  linkvideo:childItem.val().link
+			  linkvideo:childItem.val().link,
+			  langvideo: childItem.val().lang,
 			});
 		  });
 	  
@@ -84,9 +85,12 @@ class YTvideo extends Component {
 								{/* <Image source={require ('../img/play-icon.png')} />					 */}
 							</TouchableOpacity>
 						</View>
+						
 						<View style={styles.alinhaTextoCentro}>
+						<Image style={styles.lang} source={{uri:'http://rpspapp.com/images/' + this.props.data.langvideo  + '.png'}} />
 						<Text style={styles.textoAuthorVideo}>{this.props.data.autorvideo}</Text>
 						</View>
+
 				</View>
 				
 		
