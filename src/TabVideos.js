@@ -48,7 +48,7 @@ export default class TabVideos extends Component {
 			<View style={{flexDirection: 'row'}}>
 				
 					<View style={styles.chapterHead}>
-					<Text style={styles.txtHeader}>{this.props.screenProps.book} {this.props.screenProps.chapter}</Text>
+					<Text style={styles.txtHeader}>Vídeos - {this.props.screenProps.book} {this.props.screenProps.chapter}</Text>
 				</View>
 			</View>
 				<ScrollView>

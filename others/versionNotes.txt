@@ -1,4 +1,7 @@
 Notas da Versão
+3.2.7 (23/07/2018)
+ - Alterado texto do compartilhamento dos vídeos. Incluído link para download do app na Google Play.
+
 3.2.6 (27/05/2018)
  - Incluído permisão para redimensionar fontes e flag para indicar o idioma dos vídeos.
 

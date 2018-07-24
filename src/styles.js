@@ -64,7 +64,7 @@ tab_icon: {
 },
 
 chapterHead: {
-    flex:5,	
+    flex:8,	
 	backgroundColor: 'rgba(25, 115, 175, 0.4)',
     height: 30,
    	borderRadius: 10,
@@ -123,6 +123,34 @@ txtVerse: {
   fontSize: 16,
   fontFamily: 'Roboto Regular',
   textAlign: 'center',
+  },
+
+  fontsizeView: {
+    flex: 1,
+    // backgroundColor: 'rgba(25, 115, 175, 0.4)',
+    height: 30,
+   	// borderRadius: 24,
+    // borderWidth: 2,
+    marginTop:5,
+    marginLeft:1,
+    marginRight: 1,
+    marginBottom:5,
+    // borderWidth: 1.5,
+    // borderColor: "#1973af",
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  Aplus: {
+    fontSize: 20,
+    fontFamily: 'Roboto Regular',
+    
+  },
+
+  Aminus: {
+    fontSize: 12,
+    fontFamily: 'Roboto Regular',
+    textAlign: 'center',
   },
 
 //TabComentarios

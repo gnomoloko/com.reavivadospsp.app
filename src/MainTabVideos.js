@@ -26,7 +26,7 @@ export default class MainTabVideos extends Component {
         <Image source={require('../img/video_off.png')} style={styles.tab_icon} />);	
       }
     },
-    tabBarLabel: 'Vídeos'
+    // tabBarLabel: 'Vídeos'
 };
  
   render() {

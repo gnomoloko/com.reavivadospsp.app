@@ -39,7 +39,7 @@ export default class TabAudios extends Component {
         		<Image source={require('../img/audio_off.png')} style={styles.tab_icon} />);	
         	}
         },
-       tabBarLabel: 'Áudio'
+      //  tabBarLabel: 'Áudio'
      };
 
   constructor(props) {
@@ -181,7 +181,7 @@ export default class TabAudios extends Component {
       <View style={{flexDirection: 'row'}}>
       
 	  	<View style={styles.chapterHead}>
-         <Text style={styles.txtHeader}>{this.props.screenProps.book} {this.props.screenProps.chapter}</Text>
+         <Text style={styles.txtHeader}>Audios - {this.props.screenProps.book} {this.props.screenProps.chapter}</Text>
       </View>
       </View>
       <ScrollView> 

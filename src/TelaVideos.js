@@ -71,7 +71,7 @@ export default class TelaVideos extends Component {
                   <TouchableOpacity onPress = {()=> Share.share(
                         {
                           title: "Vídeo do " + this.props.navigation.state.params.autor + " - " + this.props.navigation.state.params.book + " " + this.props.navigation.state.params.chapter,
-                          message: "Vídeo do " + this.props.navigation.state.params.autor + " - " + this.props.navigation.state.params.book + " " + this.props.navigation.state.params.chapter + "\r\n" + "https://youtu.be/" + this.props.navigation.state.params.link  + "\r\n" + "\r\n" + "Enviado de Reavivadospsp_app." +  "\r\n" + "Em breve na Play Store para seu dispositivo Android!" ,
+                          message: "Vídeo do " + this.props.navigation.state.params.autor + " - " + this.props.navigation.state.params.book + " " + this.props.navigation.state.params.chapter + "\r\n" + "https://youtu.be/" + this.props.navigation.state.params.link  + "\r\n\r\nEnviado de Reavivados_app.\r\nDisponível na Google Play\r\n\r\nhttps://play.google.com/store/apps/details?id=com.reavivados_app",
                           url: "https://youtu.be/" + this.props.navigation.state.params.link
                         })}>
                     <View style={styles.buttonShare}>

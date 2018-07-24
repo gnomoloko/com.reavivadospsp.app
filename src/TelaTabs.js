@@ -20,7 +20,7 @@ const Tabs = TabNavigator({
   {tabBarPosition: 'top', animationEnable: true,
   tabBarOptions: {
     showIcon:true,
-    showLabel:true,
+    showLabel:false,
     style: {
       backgroundColor:'#d8d8d8'
     },

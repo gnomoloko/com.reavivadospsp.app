@@ -101,8 +101,8 @@ android {
         applicationId "com.reavivados_app"
         minSdkVersion 22
         targetSdkVersion 22
-        versionCode 15
-        versionName "3.2.6"
+        versionCode 16
+        versionName "3.2.7"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }

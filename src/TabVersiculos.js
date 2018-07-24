@@ -29,7 +29,7 @@ export default class TabVersiculos extends Component {
         		<Image source={require('../img/book_off.png')} style={styles.tab_icon} />);	
         	}
         },
-        tabBarLabel: 'Biblia',
+        // tabBarLabel: 'Biblia',
         
       };
 
@@ -77,7 +77,7 @@ render() {
       <View style={{flexDirection: 'row'}}>
       
 	  	<View style={styles.chapterHead}>
-         <Text style={styles.txtHeader}>{this.props.screenProps.book} {this.props.screenProps.chapter}</Text>
+         <Text style={styles.txtHeader}>Bíblia - {this.props.screenProps.book} {this.props.screenProps.chapter}</Text>
       </View>
       </View>
       	
