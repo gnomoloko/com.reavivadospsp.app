@@ -5,7 +5,7 @@ import { TabNavigator } from 'react-navigation';
 import TabVersiculos from './TabVersiculos';
 import TabComentarios from './TabComentarios';
 import MainTabVideos from './MainTabVideos';
-import TabAudios from './TabAudios';
+// import TabAudios from './TabAudios';
 //import TabImages from './TabImages';
 import styles from './styles.js';
 
@@ -14,7 +14,7 @@ const Tabs = TabNavigator({
   TabVersiculos: { screen: TabVersiculos},
   TabComentarios: { screen: TabComentarios},
   MainTabVideos: { screen: MainTabVideos},
-  TabAudios: { screen: TabAudios},
+  // TabAudios: { screen: TabAudios},
   //TabImages: { screen: TabImages}
 },
   {tabBarPosition: 'top', animationEnable: true,

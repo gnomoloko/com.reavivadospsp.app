@@ -30,7 +30,7 @@ export default class TabComentarios extends Component {
         		<Image source={require('../img/coment_off.png')} style={styles.tab_icon} />);	
         	}
         },
-       tabBarLabel: 'Notas'
+       tabBarLabel: 'Comentários'
      };
 
   
@@ -68,7 +68,7 @@ export default class TabComentarios extends Component {
         <View style={{flexDirection: 'row'}}>
       
 	  	<View style={styles.chapterHead}>
-         <Text style={styles.txtHeader}>{this.props.screenProps.book} {this.props.screenProps.chapter}</Text>
+         <Text style={styles.txtHeader}>{this.props.screenProps.book} {this.props.screenProps.chapter} </Text>
       </View>
       </View>
             <ScrollView>

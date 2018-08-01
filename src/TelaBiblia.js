@@ -8,7 +8,7 @@ export default class TelaBiblia extends Component {
   
 
   static navigationOptions = ({navigation}) => ({
-        title: 'Bíblia',
+        title: 'Bíblia - Novo Testamento',
         headerStyle:{
             backgroundColor:'#d8d8d8',
             height: 25},
@@ -20,7 +20,7 @@ export default class TelaBiblia extends Component {
     this.state = {
    
     livros:[
-{key: "1", abrev:"gen", name : "Gênesis", en_name: "Genesis"},
+/* {key: "1", abrev:"gen", name : "Gênesis", en_name: "Genesis"},
 {key: "2", abrev:"exo", name : "Êxodo", en_name: "Exodus"},
 {key: "3", abrev:"lev", name : "Levítico", en_name: "Leviticus"},
 {key: "4", abrev:"num", name : "Números", en_name: "Numbers"},
@@ -58,7 +58,7 @@ export default class TelaBiblia extends Component {
 {key: "36", abrev:"zep", name : "Sofonias", en_name: "Zephaniah"},
 {key: "37", abrev:"hag", name : "Ageu", en_name: "Haggai"},
 {key: "38", abrev:"zec", name : "Zacarias", en_name: "Zechariah"},
-{key: "39", abrev:"mal", name : "Malaquias", en_name: "Malachi"},
+{key: "39", abrev:"mal", name : "Malaquias", en_name: "Malachi"}, */
 {key: "40", abrev:"mat", name : "Mateus", en_name: "Matthew"},
 {key: "41", abrev:"mrk", name : "Marcos", en_name: "Mark"},
 {key: "42", abrev:"luk", name : "Lucas", en_name: "Luke"},

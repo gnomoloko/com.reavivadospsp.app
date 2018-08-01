@@ -1,4 +1,8 @@
 Notas da Versão
+3.4 (31/07/2018)
+ - Removido livros do antigo testamento.
+ - Removido comentario em audio
+
 3.2.6 (27/05/2018)
  - Incluído permisão para redimensionar fontes e flag para indicar o idioma dos vídeos.
 
